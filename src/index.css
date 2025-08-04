@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}

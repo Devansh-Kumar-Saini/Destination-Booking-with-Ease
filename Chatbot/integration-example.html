@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarSe-Chalo - Chatbot Integration Example</title>
+    <link rel="stylesheet" href="chatbot-styles.css">
+</head>
+<body>
+    <h1>Welcome to CarSe-Chalo</h1>
+    <p>This is an example page showing how to integrate your custom chatbot.</p>
+    
+    <!-- Your chatbot will appear as a floating widget -->
+    <div id="chatbot-widget" style="display:none">
+      <!-- Chatbot content -->
+    </div>
+    
+    <!-- Include the chatbot script at the end of your body tag -->
+    <script src="chatbot.js"></script>
+    
+    <!-- Optional: Customize the chatbot appearance -->
+    <script>
+        // The chatbot will automatically initialize when the page loads
+        // You can access it via window.CarSeChaloChatbot if needed
+        
+        // Example: Customize the initial message
+        document.addEventListener('DOMContentLoaded', function() {
+            // The chatbot is automatically created and ready to use
+            console.log('CarSe-Chalo chatbot loaded successfully!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "CarSe-Chalo",
+  "purpose": "ecommerce",
+  "theme": "Tours and Travel ",
+  "features": "it is destination holiday booking website for Indian Places only.",
+  "makers": "Devansh",
+  "techStack": "React, tailwindcss",
+  "sampleQA": [],
+  "colors": {
+    "primary": "#667EEA",
+    "secondary": "#764BA2",
+    "accent": "#F093FB",
+    "background": "#ffffff",
+    "text": "#2D3748"
+  },
+  "position": {
+    "bottom": "20px",
+    "right": "20px",
+    "width": "350px",
+    "height": "500px"
+  },
+  "messages": {
+    "welcome": "Hello! I'm your CarSe-Chalo assistant. How can I help you today?",
+    "fallback": "I'm here to help with questions about your website. Could you please rephrase your question?",
+    "error": "I'm having trouble responding right now. Please try again in a moment."
+  }
+}

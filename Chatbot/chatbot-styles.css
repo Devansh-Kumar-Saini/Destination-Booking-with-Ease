@@ -1,0 +1,110 @@
+/* Custom styles for CarSe-Chalo Chatbot */
+
+/* You can customize these styles to match your website's design */
+
+/* Override chatbot colors */
+:root {
+  --chatbot-primary: #667EEA;
+  --chatbot-secondary: #764BA2;
+  --chatbot-accent: #F093FB;
+  --chatbot-background: #ffffff;
+  --chatbot-text: #2D3748;
+  --chatbot-border: #e2e8f0;
+}
+
+/* Custom chatbot container styles */
+#ai-chatbot-widget .chatbot-container {
+  /* Add your custom styles here */
+}
+
+/* Custom header styles */
+#ai-chatbot-widget .chatbot-header {
+  background: linear-gradient(135deg, var(--chatbot-primary) 0%, var(--chatbot-secondary) 100%) !important;
+}
+
+/* Custom message styles */
+#ai-chatbot-widget .bot-message {
+  /* Style bot messages */
+}
+
+#ai-chatbot-widget .user-message {
+  /* Style user messages */
+}
+
+/* Custom input styles */
+#ai-chatbot-widget #chatbot-input {
+  border-color: var(--chatbot-border) !important;
+}
+
+#ai-chatbot-widget #chatbot-input:focus {
+  border-color: var(--chatbot-primary) !important;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2) !important;
+}
+
+/* Custom button styles */
+#ai-chatbot-widget #send-message {
+  background: linear-gradient(135deg, var(--chatbot-primary) 0%, var(--chatbot-secondary) 100%) !important;
+}
+
+#ai-chatbot-widget #chatbot-toggle {
+  background: linear-gradient(135deg, var(--chatbot-primary) 0%, var(--chatbot-secondary) 100%) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #ai-chatbot-widget .chatbot-container {
+    width: 100% !important;
+    height: 100% !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  #ai-chatbot-widget #chatbot-toggle {
+    bottom: 80px !important;
+  }
+}
+
+/* Animation styles */
+@keyframes chatbotSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#ai-chatbot-widget .chatbot-container {
+  animation: chatbotSlideIn 0.3s ease-out;
+}
+
+/* Accessibility improvements */
+#ai-chatbot-widget button:focus {
+  outline: 2px solid var(--chatbot-primary);
+  outline-offset: 2px;
+}
+
+#ai-chatbot-widget input:focus {
+  outline: none;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --chatbot-background: #1a202c;
+    --chatbot-text: #e2e8f0;
+    --chatbot-border: #4a5568;
+  }
+  
+  #ai-chatbot-widget .chatbot-container {
+    background: var(--chatbot-background) !important;
+    color: var(--chatbot-text) !important;
+  }
+  
+  #ai-chatbot-widget .chatbot-messages {
+    background: #2d3748 !important;
+  }
+}

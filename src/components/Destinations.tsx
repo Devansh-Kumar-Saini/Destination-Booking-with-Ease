@@ -16,7 +16,7 @@ const Destinations: React.FC = () => {
     });
 
     let animationFrame: number;
-    let scrollSpeed = 4; // Increased speed (px per frame)
+    let scrollSpeed = 0.6; // Increased speed (px per frame)
 
     const animate = () => {
       if (!scrollContainer || isPaused.current) return;
